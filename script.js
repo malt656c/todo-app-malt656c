@@ -20,9 +20,10 @@ function addNewTask(evt) {
     color: addTaskSelect.value,
     done: false,
   };
-  console.log(addToLocalStorage(taskObject));
+  addToLocalStorage(taskObject)
   /* sender vores object til newTask funktionen og appender html elementet det får retur */
   document.querySelector("#todoListContent").appendChild(newTask(taskObject));
+
   updateCounter();
 
   /* resetter vores input */
