@@ -13,6 +13,7 @@ export function addToLocalStorage(item) {
 }
 export function retrieveLocalStorage() {
   if (localStorage.getItem("taskListArray") == null) {
+    console.log("empty")
   } else if (localStorage.getItem("taskListArray") !== null) {
     let storageArray = JSON.parse(localStorage.getItem("taskListArray"));
     return storageArray;
