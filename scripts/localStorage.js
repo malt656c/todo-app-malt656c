@@ -1,6 +1,7 @@
 let storageArray = JSON.parse(localStorage.getItem("taskListArray"));
 export function addToLocalStorage(item) {
   if (localStorage.getItem("taskListArray") == null) {
+    storageArray=[];
     storageArray.push(item);
     localStorage.setItem("taskListArray", JSON.stringify(storageArray));
     return storageArray;
