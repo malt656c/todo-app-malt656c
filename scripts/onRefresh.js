@@ -5,7 +5,7 @@ export function onRefresh() {
   const addTaskSelect = document.querySelector("#taskColorPicker");
   addTaskSelect.style.setProperty("--bg_clr", `var(--${addTaskSelect.value}_clr)`);
   let StorageArray = retrieveLocalStorage();
-  if (StorageArray !== null) {
+  if (StorageArray !== null&&StorageArray !== undefined) {
     StorageArray.forEach((item) => {
       if (item.done == false) {
         const toDoItem = newTask(item);
