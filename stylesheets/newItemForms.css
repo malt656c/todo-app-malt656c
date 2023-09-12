@@ -1,0 +1,103 @@
+#todoList,
+#doneList {
+  background-color: var(--white_clr);
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  border-radius: 0.25rem;
+  filter: drop-shadow(0px 0px 3px var(--blue_clr));
+  width: clamp(250px, calc(100vw - 2rem), 700px);
+}
+#todoListHeader,
+#doneListHeader {
+  font-size: 1.75rem;
+  font-family: fantasy;
+  font-weight: 100;
+}
+#itemAmount{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+background-color: var(--blue_clr);
+color: var(--white_clr);
+  width: 1.5rem;
+display: grid;
+place-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+#todoListContent,
+#todoListBody,
+#doneListContent {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-bottom: 1px solid var(--blue_clr);
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: clamp(1em, 1.2em, 1.4em);
+  width: 100%;
+}
+
+#addNewTask {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#addNewTask form {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 0.5rem;
+  place-items: center;
+  width: 100%;
+}
+#taskColorPicker, #newTaskBtn{
+grid-column: 2;
+}
+#newTaskName, #newTaskDesc{
+  grid-column: 1;
+}
+#newTaskDesc{
+resize: none;
+}
+#taskColorPicker {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #392f5a66;
+  border: 5px solid var(--white_clr);
+  appearance: none;
+  background-color: var(--white_clr);
+  background-color: var(--bg_clr);
+}
+#taskColorPicker option[data-color="white"] {
+  background-color: var(--white_clr);
+}
+#taskColorPicker option[data-color="green"] {
+  background-color: var(--green_clr);
+}
+#taskColorPicker option[data-color="lightblue"] {
+  background-color: var(--lightblue_clr);
+}
+#taskColorPicker option[data-color="yellow"] {
+  background-color: var(--yellow_clr);
+}
+#taskColorPicker option[data-color="orange"] {
+  background-color: var(--orange_clr);
+}
+#newTaskBtn{
+  background-image: url(../assets/plus-100.png);
+  background-size: contain;
+  font-size: 2.5em;
+  height: 100%;
+  width:auto;
+  aspect-ratio: 1;
+  grid-row: 1;
+}

@@ -1,0 +1,30 @@
+:root {
+  --blue_clr: #392f5a;
+  --green_clr: #9dd9d2;
+  --lightblue_clr: #9db6d9;
+  --white_clr: #fff8f0;
+  --yellow_clr: #f4d06f;
+  --orange_clr: #ffaf5f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: var(--green_clr);
+  color: var(--blue_clr);
+}
+main {
+  display: grid;
+  align-items:start;
+  padding: 1rem;
+  gap: 3rem;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+

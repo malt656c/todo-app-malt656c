@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheets/listsAndTasks.css" />
+    <link rel="stylesheet" href="stylesheets/newItemForms.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!--  -->
+      <template id="taskTemplate">
+        <div class="task">
+          <div>
+            <input type="checkbox" name="" id="" />
+            <label for=""></label>
+          </div>
+          <button class="closeBtn"></button>
+          <p></p>
+        </div>
+      </template>
+      <!--  -->
+      <section id="todoList">
+        <div id="todoListHeader">
+          <h2>To-do List</h2>
+          <span id="itemAmount"></span>
+        </div>
+        <div id="todoListBody">
+          <div id="todoListContent">
+
+          </div>
+          <div id="addNewTask">
+            <form action="" id="newTaskForm">
+              <input type="text" placeholder="add task name" id="newTaskName"/>
+              <textarea name="" id="newTaskDesc" cols="30" rows="4" placeholder="add task description"></textarea>
+              <select name="colorPicker" id="taskColorPicker" value="white" class="colorPicker">
+                <option value="white" data-color="white"></option>
+                <option value="green" data-color="green"></option>
+                <option value="lightblue" data-color="lightblue"></option>
+                <option value="yellow" data-color="yellow"></option>
+                <option value="orange" data-color="orange"></option>
+              </select>
+              <button id="newTaskBtn"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="doneList">
+        <div id="doneListHeader">
+          <h2>Done</h2>
+        </div>
+        <div id="doneListContent"></div>
+      </section>
+    </main>
+  </body>
+</html>
