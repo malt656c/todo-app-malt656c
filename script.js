@@ -1,7 +1,7 @@
 import { newTask, updateCounter } from "./scripts/newTask.js";
 import { onRefresh } from "./scripts/onRefresh.js";
 import { colorPicker } from "./scripts/interactivity.js";
-import { addToLocalStorage } from "./scripts/localStorage.js";
+import { addToLocalStorage,retrieveLocalStorage,updateLocalStorage,deleteLocalStorage } from "./scripts/localStorage.js";
 
 const addTaskBtn = document.querySelector("#newTaskBtn");
 addTaskBtn.addEventListener("click", addNewTask);
