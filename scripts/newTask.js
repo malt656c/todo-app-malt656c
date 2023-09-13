@@ -1,4 +1,4 @@
-import { retrieveLocalStorage, addToLocalStorage, updateLocalStorage, deleteLocalStorage } from "./localStorage.js";
+import { updateLocalStorage, deleteLocalStorage } from "./localStorage.js";
 export function newTask(task) {
   /* diffinition og kloning af template*/
   let taskTemplate = document.querySelector("#taskTemplate").content;
