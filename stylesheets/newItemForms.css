@@ -15,16 +15,16 @@
   font-family: fantasy;
   font-weight: 100;
 }
-#itemAmount{
+#itemAmount {
   position: absolute;
   top: 1rem;
   right: 1rem;
   font-size: 1rem;
-background-color: var(--blue_clr);
-color: var(--white_clr);
+  background-color: var(--blue_clr);
+  color: var(--white_clr);
   width: 1.5rem;
-display: grid;
-place-items: center;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
   aspect-ratio: 1;
 }
@@ -36,7 +36,8 @@ place-items: center;
   gap: 1rem;
   width: 100%;
 }
-input, textarea {
+input,
+textarea {
   font-family: Arial, Helvetica, sans-serif;
   border: none;
   border-bottom: 1px solid var(--blue_clr);
@@ -58,25 +59,29 @@ input, textarea {
   place-items: center;
   width: 100%;
 }
-#taskColorPicker, #newTaskBtn{
-grid-column: 2;
+#taskColorPicker,
+#newTaskBtn {
+  grid-column: 2;
 }
-#newTaskName, #newTaskDesc{
+#newTaskName,
+#newTaskDesc {
   grid-column: 1;
 }
-#newTaskDesc{
-resize: none;
+#newTaskDesc {
+  resize: none;
 }
 #taskColorPicker {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
+  height: 2.5rem;
+  width: 4.5rem;
+  border-radius: 2rem;
   outline: 2px solid #392f5a66;
   border: 5px solid var(--white_clr);
   appearance: none;
   background-color: var(--white_clr);
   background-color: var(--bg_clr);
+  text-align: center;
 }
+
 #taskColorPicker option[data-color="white"] {
   background-color: var(--white_clr);
 }
@@ -92,12 +97,18 @@ resize: none;
 #taskColorPicker option[data-color="orange"] {
   background-color: var(--orange_clr);
 }
-#newTaskBtn{
+
+#newTaskBtn {
   background-image: url(../assets/plus-100.png);
   background-size: contain;
   font-size: 2.5em;
   height: 100%;
-  width:auto;
+  width: auto;
   aspect-ratio: 1;
   grid-row: 1;
+}
+
+@media (max-width: 600px) {
+
+
 }
