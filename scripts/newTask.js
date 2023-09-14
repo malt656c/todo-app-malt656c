@@ -1,6 +1,5 @@
 import { updateLocalStorage, deleteLocalStorage, addToLocalStorage } from "./localStorage.js";
 
-
 export function newTask(task) {
   /* diffinition og kloning af template*/
   let taskTemplate = document.querySelector("#taskTemplate").content;
@@ -18,7 +17,7 @@ export function newTask(task) {
     event.target.parentElement.remove();
     updateCounter();
   });
-/* event tilføjes til checkboxen, som ændrer "done" parameteren på vores objekt, opdaterer objektet i localStorage og flytter det tjekkede element til den korrekte liste*/
+  /* event tilføjes til checkboxen, som ændrer "done" parameteren på vores objekt, opdaterer objektet i localStorage og flytter det tjekkede element til den korrekte liste*/
   clone.querySelector("input").addEventListener("click", (event) => {
     if (task.done == false) {
       task.done = true;
@@ -31,7 +30,7 @@ export function newTask(task) {
     }
     check(event);
   });
-/* returnerer den udfyldte template */
+  /* returnerer den udfyldte template */
   return clone;
 }
 
@@ -52,6 +51,6 @@ function check(event) {
 }
 
 export function updateCounter() {
-    /* opdaterer task antal tælleren til mængden af børn i todo listen */
+  /* opdaterer task antal tælleren til mængden af børn i todo listen */
   document.querySelector("#itemAmount").textContent = document.querySelector("#todoListContent").children.length;
 }
